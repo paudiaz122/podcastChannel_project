@@ -1,0 +1,284 @@
+@media (min-width: 768px) {
+    /**************** Intro ****************/
+    .container.big {
+        text-align: center;
+    }
+
+    br {
+        display: none;
+    }
+
+    .intro h1 .dot {
+        color: #0000EC;
+    }
+
+    .novedades .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*-------------------------------- BIG SCREEN ----------------------------------------*/
+
+@media (min-width: 1024px) {
+    /**************** General ****************/
+    h1 {
+        font-size: 64px;
+        line-height: 84px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .action-button {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    .action-button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #FFFFFF;
+    }
+
+    header a:hover {
+        color: #00F3BB;
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+
+    header a:active {
+        color: rgba(6,10,36,0.56);
+        font-weight: 400;
+    }
+
+    /**************** Menu ****************/
+    header .container {
+        width: calc(100% - 200px);
+        height: 100%;
+        max-width: 1136px;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    header label {
+        display: none;
+    }
+
+    header ul {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        position: static;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    header input:checked~ul {
+        display: flex;
+    }
+
+    header li a {
+        padding: 0 24px;
+        color: #060A24;
+    }
+
+    header li:first-child a {
+        padding: 0 24px 0 0;
+    }
+    
+    header li:last-child a {
+        padding: 0 0 0 24px;
+    }
+
+    /**************** Intro ****************/
+    .intro {
+        padding: 120px 0 5px 0;
+    }
+
+    .intro .container,
+    .episodes .container {
+        width: calc(100% - 400px);
+        margin: 0 auto;
+    }
+
+    .intro br,
+    .come-from br,
+    .guests br,
+    .novedades br {
+        display: none;
+    }
+
+    .intro p{
+        margin: 0 0 56px;
+        max-width: 628px;
+    }
+
+    .intro h1 .dot {
+        color: #0000EC;
+    }
+
+    .intro .action-button  {
+        padding: 16px 59px;
+    }
+
+    /**************** Episodes ****************/
+    section.episodes {
+        padding: 186px 0 232.6px;
+        margin: 0 auto;
+    }
+
+    h2.episodes {
+        color: #FFFFFF;
+        position: relative;
+        margin-bottom: 26px;
+    }
+
+    .container.big {
+        display: flex;
+        width: calc(100% - 200px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: unset;
+    }
+
+    .container.big:last-child {
+        padding-bottom: 0;
+    }
+
+    iframe {
+        margin: 0;
+        display: inline-block;
+        max-width: none;
+        width: calc(50% - 36px);
+    }
+
+    iframe:first-child, iframe:nth-child(2) {
+        margin-bottom: 72px;
+    }
+
+    /**************** Come-from ****************/
+    section.come-from {
+        padding-bottom: 64px;
+    }
+
+    section.come-from .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section div img.phone {
+        margin: -168.6px 0 0;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 62.4px;
+        margin-right: unset;
+    }
+
+    section.come-from h2 {
+        padding: 0;
+        margin: 20.4px 0 24px;
+    }
+
+    section.come-from p {
+        margin: 0;
+        width: 464px;
+    }
+
+    /**************** Guests ****************/
+    section.guests {
+        padding-bottom: 64px;
+    }
+
+    div.img {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    div.img img {
+        max-width: 33.3%;
+    }
+
+    /**************** Themes **************/
+    section.themes {
+        padding-top: 0px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .themes .icons .container {
+        width: 220px;
+        margin: 16px auto 0;
+    }
+
+    /**************** Novedades **************/
+    section.novedades {
+        margin-top: 34px;
+        padding: 213px 0 151px;
+    }
+
+    .novedades h2 {
+        margin-bottom: 36px;
+    }
+
+    .novedades .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.novedades .action-button  {
+        padding: 16px 59px;
+        width: 345px;
+    }
+
+    /**************** Footer **************/
+    footer {
+        padding: 36px 100px 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer p {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    footer .container {
+        width: 232px;
+        display: flex;
+        justify-items: space-between;
+        margin: 0;
+    }
+}

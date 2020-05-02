@@ -1,0 +1,287 @@
+/**************** General ****************/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: calc(100% - 32px);
+    max-width: 1040px;
+    margin: 0 auto;
+    display: block;
+    color: #060A24;
+}
+
+h1, h2 {
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+p{
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.action-button {
+    background-color: #00F3BB;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    display: inline-block;
+    margin: 36px auto 0;
+}
+
+/**************** Menu ****************/
+header {
+    height: 44px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header input {
+    display: none;
+}
+
+header label i {
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+header label i.close {
+    display: none;
+}
+
+header ul {
+    position: absolute;
+    height: 224px;
+    background-color: #0000EC;
+    top: 44px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+header a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li:first-child a {
+    padding-top: 16px;
+}
+
+header li:last-child a {
+    padding-bottom: 24px;
+}
+
+header input:checked~label .close {
+    display: block;
+}
+
+header input:checked~label .open {
+    display: none;
+}
+
+header input:checked~ul {
+    display: block;
+}
+
+/**************** Intro ****************/
+.intro {
+    padding: 29px 0 24px 0;
+}
+
+.intro p{
+    margin: 16px auto 0;
+}
+
+.intro .action-button  {
+    padding: 13px 96px;
+}
+
+/**************** Episodes ****************/
+section.episodes {
+    background-image:
+        linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 5vw, 100% 0, 100% 96%, 0 100%);
+    padding-top: 64px;
+    margin: 0 auto;
+}
+
+section.episodes h2 {
+    color: #FFFFFF;
+    position: relative;
+    width: calc(100% - 32px);
+    margin-bottom: 21px;
+}
+
+.container.big {
+    position: relative;
+    width: calc(100% - 18px);
+}
+
+.container.big:last-child {
+    padding-bottom: 143.5px;
+}
+
+iframe {
+    height: 232px;
+    margin-bottom: 11px;
+    width: 100%;
+    max-width: 584px;
+}
+
+/**************** Come-from ****************/
+section.come-from h2 {
+    padding: 0;
+}
+
+section div img.phone {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: -95.5px auto 27px;
+}
+
+section.come-from p {
+    margin: 8px auto 54px;
+}
+
+/**************** Guests ****************/
+section.guests h2 {
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+section.guests div.img {
+    margin: 14px 0 0;
+}
+
+section div.img img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+div.img:last-child {
+    margin-bottom: 48px;
+}
+
+/**************** Themes ****************/
+section.themes {
+    padding-top: 48px;
+}
+
+section.themes h2 {
+    margin: 0 auto 37px;
+    padding: 0;
+}
+
+h3.last {
+    margin-bottom: 0;
+}
+
+section.themes img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 13px 0;
+}
+
+/**************** Novedades ****************/
+section.novedades {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 5vw, 100% 0, 100% 100%, 0 100%);
+    padding: 64px 0 67px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+section.novedades h2 {
+    color: #FFFFFF;
+}
+
+section.novedades .action-button  {
+    padding: 16px 43px;
+    width: 288px;
+}
+
+/**************** Footer ****************/
+footer {
+    padding: 24px 0 31px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 24px;
+}
+
+footer .container {
+    width: calc(100% - 90px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer i {
+    color: black;
+}
